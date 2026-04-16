@@ -6,7 +6,7 @@ def get_connection():
         user="root",
         password="",
         database="hospital_db",
-        autocommit=True     # ⚠️ MUITO IMPORTANTE
+        autocommit=True     # ⚠️ faz o autoteste para evitar esquecer de dar commit()
     )
     return conn
 

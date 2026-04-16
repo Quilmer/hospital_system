@@ -8,7 +8,7 @@ def add_patient(name, birth_date, phone):
     query = "INSERT INTO patients (name, birth_date, phone) VALUES (%s,%s,%s)"
     cursor.execute(query, (name, birth_date, phone))
 
-    print("Paciente guardado na BD!")  # 👈 debug
+    print("Paciente guardado na BD!") 
 
     cursor.close()
     conn.close()
